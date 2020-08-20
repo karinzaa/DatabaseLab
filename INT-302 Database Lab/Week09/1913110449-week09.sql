@@ -30,7 +30,7 @@ ADD CONSTRAINT my_dept_id_pk PRIMARY KEY(id);
 --7
 ALTER TABLE emp2
 ADD CONSTRAINT my_emp_dept_id_fk
-FOREIGN KEY (dept_id) REFERENCES dept2(dep_id);
+FOREIGN KEY (dept_id) REFERENCES dept2(id);
 --8
 ALTER TABLE emp2
 MODIFY(commmission NUMBER(2,2)) CHECK(commmission > 0);
